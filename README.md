@@ -11,7 +11,7 @@ Example execution:
 
 It is recommend to add the script to your env variables so you can execute it anywhere on your system.I like to add env variables to my .bashrc,  you can do the same (or not): 
 
-export PATH="/path/to/where/you/have/stored/the/script/:$PATH"
+export PATH="/path/to/where/you/have/stored/the/script/bin:$PATH"
 
 
 Beside that it will be cool if you add an alias in the .bashrc file, like this:
