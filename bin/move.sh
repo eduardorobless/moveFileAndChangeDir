@@ -2,11 +2,15 @@
 #getting args
 ORIGEN=$1; 
 DESTINATION=$2; 
-echo "You are trying to move ${1} to ${2}" 
-mv "$ORIGEN" "$DESTINATION" && cd "$_";
 
-echo "You are now in: "; 
-pwd;
-echo "This are the files in the current directory: "; 
-ls; 
+if [ -z "${ORIGEN}" ] || [ -z "${DESTINATION}"]; then 
+    echo "Nothing to do, check parameters!";
+else 
+    echo "You are trying to move ${ORIGEN} to ${DESTINATION}" 
+    mv "$ORIGEN" "$DESTINATION" && cd "$_";
+    echo "You are now in: "; 
+    pwd;
+    echo "This are the files in the current directory: "; 
+    ls; 
+fi
 #B=echo $_ | sed 's/ /\\ /g';
