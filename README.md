@@ -14,9 +14,9 @@ It is recommend to add the script to your env variables so you can execute it an
 export PATH="/path/to/where/you/have/stored/the/script/bin:$PATH"
 
 
-Beside that it will be cool if you add an alias in the .bashrc file, like this:
+Beside that it will be cool if you add an alias in the .bashrc file, 'sourcing' the script enables to move to another directory:
 
-alias move='move.sh'
+alias move='. ./move.sh'
 
 Now you can just:
 
